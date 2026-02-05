@@ -1,0 +1,449 @@
+<html>
+<head>
+<title>aa5471-W4111-Spring-2026-002-HW1a.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #7a7e85;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #f75464;}
+.ls0 { height: 1px; border-width: 0; color: #43454a; background-color:#43454a}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+aa5471-W4111-Spring-2026-002-HW1a.ipynb</font>
+</center></td></tr></table>
+<pre><span class="s0">#%% md 
+&lt;div style=&quot;font-size: 32px;&quot;&gt; 
+    W4111 Spring 2026 Homework 1a 
+&lt;/div&gt; 
+ <hr class="ls0">#%% md 
+# Introduction <hr class="ls0">#%% md 
+## Homework Overview <hr class="ls0">#%% md 
+There are three parts to the homework. 
+- Part 1 walks you through the setup of your personal computer that is necessary for this course. You demonstrate completion by inserting screenshots or running code cells that demonstrate you successfully completed setup.&lt;br&gt;&lt;br&gt; 
+- Part 2 is a set of written questions that demonstrate you studied and understand lecture 1 material from the course and from the [lecture 1 slides for the recommended textbook.](https://www.db-book.com/slides-dir/index.html)&lt;br&gt;&lt;br&gt; 
+- Part 3 is a set of practical questions demonstrating basic knowledge of relational algebra and SQL. 
+ 
+ 
+__This notebook defines only part 1. We will release the remainder of homework 1 after lecture 2 because the homework requires knowing material from the lecture__ <hr class="ls0">#%% md 
+</span><hr class="ls0"><span class="s0">#%% md 
+## Part 1 $-$ Setup <hr class="ls0">#%% md 
+### PyCharm <hr class="ls0">#%% md 
+#### Install and Start PyCharm <hr class="ls0">#%% md 
+Install the most recent version of [PyCharm.](https://www.jetbrains.com/help/pycharm/installation-guide.html) There is online installation documentation and are several tutorials. 
+ 
+Students can signup for/register for a free, [one year license](https://www.jetbrains.com/academy/student-pack/) to all JetBrains development tools. Please apply for/register for a license using your Columbia University email. Once your registration is confirmed, please activate PyCharm. The documentation explains how to register your product. 
+ 
+Start PyCharm. 
+ 
+__Note:__ You may use a different integrated development environment (IDE) for Python if you prefer. For the HW, simply put the screenshots in the places that request PyCharm screenshots. <hr class="ls0">#%% md 
+#### Clone Course Project <hr class="ls0">#%% md 
+Follow the [online instructions](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html#clone-repo) for 
+[cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) a GitHub project in PyCharm. 
+ 
+You will choose a local directory where you want to store your clone of the project. 
+ 
+The HTTPS URL for cloning the repository is https://github.com/donald-f-ferguson/W4111-Intro-to-Databases-Spring-2026. <hr class="ls0">#%% md 
+#### Initialize the Virtual Environment and Jupyter Notebook Environment <hr class="ls0">#%% md 
+Follow the [online instructions](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html) to create a new Python environment for the project. Once you have setup the Python environment, open a terminal window inside PyCharm. You can open a terminal window by clicking on the icon in the left 
+sidebar. The icon is highlighted in blue in the image below. 
+ 
+You will see a command prompt. The specific prompt you see will vary based on the operating system you are using. 
+ 
+| &lt;img src=&quot;pycharm-1.jpg&quot; width=&quot;750px&quot;&gt; | 
+| :---: | 
+| PyCharm Terminal Window | <hr class="ls0">#%% md 
+In the terminal window, type the command ```pip install jupyter``` 
+ 
+When the installation completes, type the command ```jupyter notebook``` This will start a Jupyter Notebook environment on your PC. A browser window will open that should something like ... ... 
+ 
+| &lt;img src=&quot;./jupyter-1.jpg&quot;&gt; | 
+| :---: | 
+| __Jupyter Notebook__ | <hr class="ls0">#%% md 
+Navigate to the folder ```Homework/HW1``` and open the Jupyter Notebook ```W4111-Spring-2026-002-HW1a.ipynb```. 
+ 
+__Note:__ If you do not see the directories. 1) Stop jupyter notebook. 2) In the terminal window, navigate to your home directory. 3) Start jupyter notebook. 4) In the browser windown, navigate to the directory where you cloned the project. 5) Navigate to the folder containing the notebook and open it. <hr class="ls0">#%% md 
+## Using Jupyter Notebook <hr class="ls0">#%% md 
+### Getting Started <hr class="ls0">#%% md 
+There are several good, online introductions to using Jupyter notebooks. For example, 
+[How to Use Jupyter Notebook: A Beginner’s Tutorial.](https://www.dataquest.io/blog/jupyter-notebook-tutorial/) There are many, many other ones. If you are unfamiliar with Jupyter notebooks, please follow one of the tutorials. 
+ 
+You will complete the homework in the notebook you opened. <hr class="ls0">#%% md 
+### Complete Personal Information <hr class="ls0">#%% md 
+Rename this notebook file to &quot;xyz1234-W4111-Fall-2025-002-HW1.ipynb&quot; where ```xyz1234``` is your UNI. This replaces ```dff9``` in the implementation template. We suggest that you accomplish this by making a copy of the notebook and renaming the copy. This allows you to retain the original for reference. 
+ 
+In the table below, replace Professor Ferguson's personal information with your personal information by editing the markdown cell and table. 
+ 
+| Field |  Value  | 
+| :---: |:-------:| 
+| UNI | aa5471  | 
+| Last name | Aharoni | 
+| First name |  Amit   | <hr class="ls0">#%% md 
+### Demonstrate PyCharm  <hr class="ls0">#%% md 
+Take a screen capture of your PyCharm window. Copy the file into the same directory as this notebook. Edit the markdown cell below to display your image. __Make sure that the terminal window shows that you are in a directory on your laptop.__ <hr class="ls0">#%% md 
+![image.png](attachment:ef714c29-969e-492f-a62c-4d8a1ed634ec.png) 
+| :---: | 
+| __My PyCharm__ | <hr class="ls0">#%% md 
+## MySQL <hr class="ls0">#%% md 
+Install [MySQL Server Community Edition.](https://dev.mysql.com/downloads/mysql/) There are several ways to install and several online tutorials. Follow one of the online tutorials or instructions that are appropriate for your operating system. _REMEMBER THE USER NAME AND PASSWORD FOR THE ROOT ACCOUNT._ 
+ 
+__Note:__ If you have an old version of MacOS, Linux or Windows, _make sure you choose a version of MySQL that is compatible with your operating system version._ You may have to get an older version from the [archive](https://downloads.mysql.com/archives/installer/) or update your OS version. <hr class="ls0">#%% md 
+After completing the installation, open a new terminal window. You can use a native window or open a new window in PyCharm. 
+ 
+Type the command ```mysql -u root -p```. If the command is not found, you can navigate to the installation directory for MySQL and reenter the command.  
+- The installation directory on a Mac is usually ```/usr/local/mysql/bin.``` If you used Homebrew to install, the directory may be different. 
+- On Windows, the directory is usually ```C:\Program Files\MySQL\MySQL Server X.Y\bin``` where ```X.Y``` is the version of MySQL you installed. 
+ 
+Enter the password you set for ```root.``` This should open a command prompt for MySQL. Enter the command ```show databases;``` Your list of databases will be much shorter than mine. 
+ 
+Take a screenshot and replace the image below with your screenshot. Please make sure that your screenshot shows a directory indicating that the screenshot was taken on your PC. You can do this by navigating to your home directory and printing the working directory.  
+ <hr class="ls0">#%% md 
+![image.png](attachment:aa5ddca0-3bd4-4345-9e0d-5c861a8597c1.png) 
+| :---: | 
+| __My PyCharm__ | <hr class="ls0">#%% md 
+### ipython-sql <hr class="ls0">#%% md 
+Execute the Python cell below to install [ipython-sql.](https://pypi.org/project/ipython-sql/) Your status and progress messages will be different from mine. As long as they complete without an error, you should be fine. 
+ 
+There are several online documentation and tutorial pages that explain the installation process. <hr class="ls0">#%% 
+</span><span class="s1">%</span><span class="s0">pip install </span><span class="s1">--</span><span class="s0">upgrade pip</span>
+<span class="s1">%</span><span class="s0">pip install pymysql</span>
+<span class="s1">%</span><span class="s0">pip install sqlalchemy</span>
+<span class="s1">%</span><span class="s0">pip install ipython</span><span class="s1">-</span><span class="s0">sql</span><hr class="ls0"><span class="s0">#%% md 
+Execute the following Python cell. Your result may be slightly different. You are fine as long as you do not get an error message. <hr class="ls0">#%% 
+</span><span class="s1">%</span><span class="s0">load_ext sql</span><hr class="ls0"><span class="s0">#%% md 
+Set the proper root user ID and password for MySQL in the python cell below. <hr class="ls0">#%% 
+mysql_root_user </span><span class="s1">= </span><span class="s2">'root'</span>
+<span class="s0">mysql_root_password </span><span class="s1">= </span><span class="s2">'*******' </span><span class="s3"># Don't look at my password!!!</span>
+
+<span class="s3"># mysql_url = f&quot;mysql+pymysql://{mysql_root_user}:{mysql_root_password}@localhost&quot;</span>
+<span class="s0">mysql_url </span><span class="s1">= </span><span class="s2">f&quot;mysql+pymysql://</span><span class="s4">{</span><span class="s0">mysql_root_user</span><span class="s4">}</span><span class="s2">:@localhost&quot; </span><span class="s3"># removed password so you won't peek</span><hr class="ls0"><span class="s0">#%% 
+mysql_url</span><hr class="ls0"><span class="s0">#%% md 
+Run the following cell. <hr class="ls0">#%% 
+</span><span class="s1">%</span><span class="s0">sql </span><span class="s5">$</span><span class="s0">mysql_url</span><hr class="ls0"><span class="s0">#%% md 
+Run the following cell. Your list of databases should be different. <hr class="ls0">#%% 
+</span><span class="s1">%</span><span class="s0">config SqlMagic</span><span class="s1">.</span><span class="s0">style </span><span class="s1">= </span><span class="s2">'_DEPRECATED_DEFAULT'</span>
+<span class="s1">%</span><span class="s0">sql show databases;</span><hr class="ls0"><span class="s0">#%% md 
+If you get here, ```ipython-sql``` is installed and working. <hr class="ls0">#%% md 
+## DataGrip <hr class="ls0">#%% md 
+Install [DataGrip.](https://www.jetbrains.com/help/datagrip/installation-guide.html) There is online documentation and are several tutorials.  
+ 
+Follow the online instructions to register your installation using the ID you set up when getting a free license.  
+ 
+Start DataGrip. 
+ 
+Follow the [online instructions](https://www.jetbrains.com/help/datagrip/connecting-to-a-database.html) to create a connection to your local instance of MySQL. You may have to choose the option to install the database drivers. 
+ 
+Open a [query console](https://www.jetbrains.com/help/datagrip/query-consoles.html#overview) on your local database connection. 
+ 
+In the query console, enter the command. ```SHOW VARIABLES WHERE Variable_name = 'hostname';``` Take a screenshot and replace the image below with your screenshot. Make sure the image shows the query execution result. 
+ 
+ <hr class="ls0">#%% md 
+![image.png](attachment:677f1285-4248-4948-b098-6ca756edfc3b.png) 
+| :---: | 
+| __DataGrip__ | <hr class="ls0">#%% md 
+## Sample Database <hr class="ls0">#%% md 
+Execute the following ipython-sql cell. You must be successfully connect to MySQL using the previous ```%sql``` command. 
+ 
+As long as you do not get any error messages, you have successfully create the sample database. <hr class="ls0">#%% sql 
+</span>
+<span class="s0">drop schema if exists db_book; 
+create schema db_book; 
+use db_book; 
+ 
+drop table if exists prereq; 
+drop table if exists time_slot; 
+drop table if exists advisor; 
+drop table if exists takes; 
+drop table if exists student; 
+drop table if exists teaches; 
+drop table if exists section; 
+drop table if exists instructor; 
+drop table if exists course; 
+drop table if exists department; 
+drop table if exists classroom; 
+ 
+ 
+ 
+create table classroom 
+    (building       varchar(15), 
+     room_number        varchar(7), 
+     capacity       numeric(4,0), 
+     primary key (building, room_number) 
+    ); 
+ 
+create table department 
+    (dept_name      varchar(20),  
+     building       varchar(15),  
+     budget             numeric(12,2) check (budget &gt; 0), 
+     primary key (dept_name) 
+    ); 
+ 
+create table course 
+    (course_id      varchar(8),  
+     title          varchar(50),  
+     dept_name      varchar(20), 
+     credits        numeric(2,0) check (credits &gt; 0), 
+     primary key (course_id), 
+     foreign key (dept_name) references department (dept_name) 
+        on delete set null 
+    ); 
+ 
+create table instructor 
+    (ID         varchar(5),  
+     name           varchar(20) not null,  
+     dept_name      varchar(20),  
+     salary         numeric(8,2) check (salary &gt; 29000), 
+     primary key (ID), 
+     foreign key (dept_name) references department (dept_name) 
+        on delete set null 
+    ); 
+ 
+create table section 
+    (course_id      varchar(8),  
+         sec_id         varchar(8), 
+     semester       varchar(6) 
+        check (semester in ('Fall', 'Winter', 'Spring', 'Summer')),  
+     year           numeric(4,0) check (year &gt; 1701 and year &lt; 2100),  
+     building       varchar(15), 
+     room_number        varchar(7), 
+     time_slot_id       varchar(4), 
+     primary key (course_id, sec_id, semester, year), 
+     foreign key (course_id) references course (course_id) 
+        on delete cascade, 
+     foreign key (building, room_number) references classroom (building, room_number) 
+        on delete set null 
+    ); 
+ 
+create table teaches 
+    (ID         varchar(5),  
+     course_id      varchar(8), 
+     sec_id         varchar(8),  
+     semester       varchar(6), 
+     year           numeric(4,0), 
+     primary key (ID, course_id, sec_id, semester, year), 
+     foreign key (course_id, sec_id, semester, year) references section (course_id, sec_id, semester, year) 
+        on delete cascade, 
+     foreign key (ID) references instructor (ID) 
+        on delete cascade 
+    ); 
+ 
+create table student 
+    (ID         varchar(5),  
+     name           varchar(20) not null,  
+     dept_name      varchar(20),  
+     tot_cred       numeric(3,0) check (tot_cred &gt;= 0), 
+     primary key (ID), 
+     foreign key (dept_name) references department (dept_name) 
+        on delete set null 
+    ); 
+ 
+create table takes 
+    (ID         varchar(5),  
+     course_id      varchar(8), 
+     sec_id         varchar(8),  
+     semester       varchar(6), 
+     year           numeric(4,0), 
+     grade              varchar(2), 
+     primary key (ID, course_id, sec_id, semester, year), 
+     foreign key (course_id, sec_id, semester, year) references section (course_id, sec_id, semester, year) 
+        on delete cascade, 
+     foreign key (ID) references student (ID) 
+        on delete cascade 
+    ); 
+ 
+create table advisor 
+    (s_ID           varchar(5), 
+     i_ID           varchar(5), 
+     primary key (s_ID), 
+     foreign key (i_ID) references instructor (ID) 
+        on delete set null, 
+     foreign key (s_ID) references student (ID) 
+        on delete cascade 
+    ); 
+ 
+create table time_slot 
+    (time_slot_id       varchar(4), 
+     day            varchar(1), 
+     start_hr       numeric(2) check (start_hr &gt;= 0 and start_hr &lt; 24), 
+     start_min      numeric(2) check (start_min &gt;= 0 and start_min &lt; 60), 
+     end_hr         numeric(2) check (end_hr &gt;= 0 and end_hr &lt; 24), 
+     end_min        numeric(2) check (end_min &gt;= 0 and end_min &lt; 60), 
+     primary key (time_slot_id, day, start_hr, start_min) 
+    ); 
+ 
+create table prereq 
+    (course_id      varchar(8),  
+     prereq_id      varchar(8), 
+     primary key (course_id, prereq_id), 
+     foreign key (course_id) references course (course_id) 
+        on delete cascade, 
+     foreign key (prereq_id) references course (course_id) 
+    ); 
+ 
+delete from prereq; 
+delete from time_slot; 
+delete from advisor; 
+delete from takes; 
+delete from student; 
+delete from teaches; 
+delete from section; 
+delete from instructor; 
+delete from course; 
+delete from department; 
+delete from classroom; 
+insert into classroom values ('Packard', '101', '500'); 
+insert into classroom values ('Painter', '514', '10'); 
+insert into classroom values ('Taylor', '3128', '70'); 
+insert into classroom values ('Watson', '100', '30'); 
+insert into classroom values ('Watson', '120', '50'); 
+insert into department values ('Biology', 'Watson', '90000'); 
+insert into department values ('Comp. Sci.', 'Taylor', '100000'); 
+insert into department values ('Elec. Eng.', 'Taylor', '85000'); 
+insert into department values ('Finance', 'Painter', '120000'); 
+insert into department values ('History', 'Painter', '50000'); 
+insert into department values ('Music', 'Packard', '80000'); 
+insert into department values ('Physics', 'Watson', '70000'); 
+insert into course values ('BIO-101', 'Intro. to Biology', 'Biology', '4'); 
+insert into course values ('BIO-301', 'Genetics', 'Biology', '4'); 
+insert into course values ('BIO-399', 'Computational Biology', 'Biology', '3'); 
+insert into course values ('CS-101', 'Intro. to Computer Science', 'Comp. Sci.', '4'); 
+insert into course values ('CS-190', 'Game Design', 'Comp. Sci.', '4'); 
+insert into course values ('CS-315', 'Robotics', 'Comp. Sci.', '3'); 
+insert into course values ('CS-319', 'Image Processing', 'Comp. Sci.', '3'); 
+insert into course values ('CS-347', 'Database System Concepts', 'Comp. Sci.', '3'); 
+insert into course values ('EE-181', 'Intro. to Digital Systems', 'Elec. Eng.', '3'); 
+insert into course values ('FIN-201', 'Investment Banking', 'Finance', '3'); 
+insert into course values ('HIS-351', 'World History', 'History', '3'); 
+insert into course values ('MU-199', 'Music Video Production', 'Music', '3'); 
+insert into course values ('PHY-101', 'Physical Principles', 'Physics', '4'); 
+insert into instructor values ('10101', 'Srinivasan', 'Comp. Sci.', '65000'); 
+insert into instructor values ('12121', 'Wu', 'Finance', '90000'); 
+insert into instructor values ('15151', 'Mozart', 'Music', '40000'); 
+insert into instructor values ('22222', 'Einstein', 'Physics', '95000'); 
+insert into instructor values ('32343', 'El Said', 'History', '60000'); 
+insert into instructor values ('33456', 'Gold', 'Physics', '87000'); 
+insert into instructor values ('45565', 'Katz', 'Comp. Sci.', '75000'); 
+insert into instructor values ('58583', 'Califieri', 'History', '62000'); 
+insert into instructor values ('76543', 'Singh', 'Finance', '80000'); 
+insert into instructor values ('76766', 'Crick', 'Biology', '72000'); 
+insert into instructor values ('83821', 'Brandt', 'Comp. Sci.', '92000'); 
+insert into instructor values ('98345', 'Kim', 'Elec. Eng.', '80000'); 
+insert into section values ('BIO-101', '1', 'Summer', '2017', 'Painter', '514', 'B'); 
+insert into section values ('BIO-301', '1', 'Summer', '2018', 'Painter', '514', 'A'); 
+insert into section values ('CS-101', '1', 'Fall', '2017', 'Packard', '101', 'H'); 
+insert into section values ('CS-101', '1', 'Spring', '2018', 'Packard', '101', 'F'); 
+insert into section values ('CS-190', '1', 'Spring', '2017', 'Taylor', '3128', 'E'); 
+insert into section values ('CS-190', '2', 'Spring', '2017', 'Taylor', '3128', 'A'); 
+insert into section values ('CS-315', '1', 'Spring', '2018', 'Watson', '120', 'D'); 
+insert into section values ('CS-319', '1', 'Spring', '2018', 'Watson', '100', 'B'); 
+insert into section values ('CS-319', '2', 'Spring', '2018', 'Taylor', '3128', 'C'); 
+insert into section values ('CS-347', '1', 'Fall', '2017', 'Taylor', '3128', 'A'); 
+insert into section values ('EE-181', '1', 'Spring', '2017', 'Taylor', '3128', 'C'); 
+insert into section values ('FIN-201', '1', 'Spring', '2018', 'Packard', '101', 'B'); 
+insert into section values ('HIS-351', '1', 'Spring', '2018', 'Painter', '514', 'C'); 
+insert into section values ('MU-199', '1', 'Spring', '2018', 'Packard', '101', 'D'); 
+insert into section values ('PHY-101', '1', 'Fall', '2017', 'Watson', '100', 'A'); 
+insert into teaches values ('10101', 'CS-101', '1', 'Fall', '2017'); 
+insert into teaches values ('10101', 'CS-315', '1', 'Spring', '2018'); 
+insert into teaches values ('10101', 'CS-347', '1', 'Fall', '2017'); 
+insert into teaches values ('12121', 'FIN-201', '1', 'Spring', '2018'); 
+insert into teaches values ('15151', 'MU-199', '1', 'Spring', '2018'); 
+insert into teaches values ('22222', 'PHY-101', '1', 'Fall', '2017'); 
+insert into teaches values ('32343', 'HIS-351', '1', 'Spring', '2018'); 
+insert into teaches values ('45565', 'CS-101', '1', 'Spring', '2018'); 
+insert into teaches values ('45565', 'CS-319', '1', 'Spring', '2018'); 
+insert into teaches values ('76766', 'BIO-101', '1', 'Summer', '2017'); 
+insert into teaches values ('76766', 'BIO-301', '1', 'Summer', '2018'); 
+insert into teaches values ('83821', 'CS-190', '1', 'Spring', '2017'); 
+insert into teaches values ('83821', 'CS-190', '2', 'Spring', '2017'); 
+insert into teaches values ('83821', 'CS-319', '2', 'Spring', '2018'); 
+insert into teaches values ('98345', 'EE-181', '1', 'Spring', '2017'); 
+insert into student values ('00128', 'Zhang', 'Comp. Sci.', '102'); 
+insert into student values ('12345', 'Shankar', 'Comp. Sci.', '32'); 
+insert into student values ('19991', 'Brandt', 'History', '80'); 
+insert into student values ('23121', 'Chavez', 'Finance', '110'); 
+insert into student values ('44553', 'Peltier', 'Physics', '56'); 
+insert into student values ('45678', 'Levy', 'Physics', '46'); 
+insert into student values ('54321', 'Williams', 'Comp. Sci.', '54'); 
+insert into student values ('55739', 'Sanchez', 'Music', '38'); 
+insert into student values ('70557', 'Snow', 'Physics', '0'); 
+insert into student values ('76543', 'Brown', 'Comp. Sci.', '58'); 
+insert into student values ('76653', 'Aoi', 'Elec. Eng.', '60'); 
+insert into student values ('98765', 'Bourikas', 'Elec. Eng.', '98'); 
+insert into student values ('98988', 'Tanaka', 'Biology', '120'); 
+insert into takes values ('00128', 'CS-101', '1', 'Fall', '2017', 'A'); 
+insert into takes values ('00128', 'CS-347', '1', 'Fall', '2017', 'A-'); 
+insert into takes values ('12345', 'CS-101', '1', 'Fall', '2017', 'C'); 
+insert into takes values ('12345', 'CS-190', '2', 'Spring', '2017', 'A'); 
+insert into takes values ('12345', 'CS-315', '1', 'Spring', '2018', 'A'); 
+insert into takes values ('12345', 'CS-347', '1', 'Fall', '2017', 'A'); 
+insert into takes values ('19991', 'HIS-351', '1', 'Spring', '2018', 'B'); 
+insert into takes values ('23121', 'FIN-201', '1', 'Spring', '2018', 'C+'); 
+insert into takes values ('44553', 'PHY-101', '1', 'Fall', '2017', 'B-'); 
+insert into takes values ('45678', 'CS-101', '1', 'Fall', '2017', 'F'); 
+insert into takes values ('45678', 'CS-101', '1', 'Spring', '2018', 'B+'); 
+insert into takes values ('45678', 'CS-319', '1', 'Spring', '2018', 'B'); 
+insert into takes values ('54321', 'CS-101', '1', 'Fall', '2017', 'A-'); 
+insert into takes values ('54321', 'CS-190', '2', 'Spring', '2017', 'B+'); 
+insert into takes values ('55739', 'MU-199', '1', 'Spring', '2018', 'A-'); 
+insert into takes values ('76543', 'CS-101', '1', 'Fall', '2017', 'A'); 
+insert into takes values ('76543', 'CS-319', '2', 'Spring', '2018', 'A'); 
+insert into takes values ('76653', 'EE-181', '1', 'Spring', '2017', 'C'); 
+insert into takes values ('98765', 'CS-101', '1', 'Fall', '2017', 'C-'); 
+insert into takes values ('98765', 'CS-315', '1', 'Spring', '2018', 'B'); 
+insert into takes values ('98988', 'BIO-101', '1', 'Summer', '2017', 'A'); 
+insert into takes values ('98988', 'BIO-301', '1', 'Summer', '2018', null); 
+insert into advisor values ('00128', '45565'); 
+insert into advisor values ('12345', '10101'); 
+insert into advisor values ('23121', '76543'); 
+insert into advisor values ('44553', '22222'); 
+insert into advisor values ('45678', '22222'); 
+insert into advisor values ('76543', '45565'); 
+insert into advisor values ('76653', '98345'); 
+insert into advisor values ('98765', '98345'); 
+insert into advisor values ('98988', '76766'); 
+insert into time_slot values ('A', 'M', '8', '0', '8', '50'); 
+insert into time_slot values ('A', 'W', '8', '0', '8', '50'); 
+insert into time_slot values ('A', 'F', '8', '0', '8', '50'); 
+insert into time_slot values ('B', 'M', '9', '0', '9', '50'); 
+insert into time_slot values ('B', 'W', '9', '0', '9', '50'); 
+insert into time_slot values ('B', 'F', '9', '0', '9', '50'); 
+insert into time_slot values ('C', 'M', '11', '0', '11', '50'); 
+insert into time_slot values ('C', 'W', '11', '0', '11', '50'); 
+insert into time_slot values ('C', 'F', '11', '0', '11', '50'); 
+insert into time_slot values ('D', 'M', '13', '0', '13', '50'); 
+insert into time_slot values ('D', 'W', '13', '0', '13', '50'); 
+insert into time_slot values ('D', 'F', '13', '0', '13', '50'); 
+insert into time_slot values ('E', 'T', '10', '30', '11', '45 '); 
+insert into time_slot values ('E', 'R', '10', '30', '11', '45 '); 
+insert into time_slot values ('F', 'T', '14', '30', '15', '45 '); 
+insert into time_slot values ('F', 'R', '14', '30', '15', '45 '); 
+insert into time_slot values ('G', 'M', '16', '0', '16', '50'); 
+insert into time_slot values ('G', 'W', '16', '0', '16', '50'); 
+insert into time_slot values ('G', 'F', '16', '0', '16', '50'); 
+insert into time_slot values ('H', 'W', '10', '0', '12', '30'); 
+insert into prereq values ('BIO-301', 'BIO-101'); 
+insert into prereq values ('BIO-399', 'BIO-101'); 
+insert into prereq values ('CS-190', 'CS-101'); 
+insert into prereq values ('CS-315', 'CS-101'); 
+insert into prereq values ('CS-319', 'CS-101'); 
+insert into prereq values ('CS-347', 'CS-101'); 
+insert into prereq values ('EE-181', 'PHY-101'); <hr class="ls0">#%% md 
+Execute the following cell to verify that you have correctly created and loaded the sample database. <hr class="ls0">#%% 
+</span><span class="s1">%</span><span class="s0">sql select </span><span class="s1">* </span><span class="s4">from </span><span class="s0">db_book</span><span class="s1">.</span><span class="s0">student where dept_name</span><span class="s1">=</span><span class="s2">'Comp. Sci.'</span><hr class="ls0"><span class="s0">#%% md 
+### Summary <hr class="ls0">#%% md 
+If you were able to accomplish all of the tasks above, you successfully completed part 1 of homework 1. <hr class="ls0">#%% md 
+## Create PDF <hr class="ls0">#%% md 
+1. Use the ```File -&gt; Save and Export Notebook as -&gt; HTML``` option to save your notebook as an HTML file. 
+2. Copy the created HTML file to the same directory as the notebook and images you created. 
+3. Open the HTML file in a browser. 
+4. Using the _browser's_ ```File -&gt; Print``` option print the HTML file to a PDF. This is your submission format. 
+5. Follow the submission instructions on Ed Discussion to submit your file to GradeScope.</span></pre>
+</body>
+</html>
